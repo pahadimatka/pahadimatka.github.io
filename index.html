@@ -27,7 +27,7 @@ header{
 	float: left;
 	position: absolute;
 	top: 250px;
-	font-size:30px;
+	font-size:5px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align: center;
@@ -35,14 +35,17 @@ header{
 	animation-name: luckyNumberDown;
   	animation-duration: 10s;	
   	animation-fill-mode: forwards;
+	z-index:10;
 }
 @keyframes luckyNumberDown {
-  0%   {color: red;}
-  20%  {color: yellow;}
-  40%  {color: yellow;}
-  60%  {color: blue; }
-  80% {color: green; }
-  100%  {color: yellow; top: 90px;}
+  0%   {color: #3E3D00;}
+  10% {color: #555300;}
+  20%  {color: #716D00;}
+  30% {color: #938F00;}
+  40%  {color: #BBB700;}
+  60%  {color: #E1DC00; }
+  80% {color: #F9F200; }
+  100%  {color: yellow; top:90px; font-size:40px;}
 }
 .tableCont{
 	width: calc(100% - 20px);
@@ -58,7 +61,6 @@ header{
 h1{
 	text-align: center;
 	margin-top:10px;
-	text-shadow: ;
 }
 .matka{
 	width:350px;
